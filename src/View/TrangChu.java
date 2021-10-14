@@ -18,13 +18,16 @@ public class TrangChu extends javax.swing.JFrame {
     QuanLyMatHang qlmh;
     QuanLyKhachHang qlkh;
     QuanLyBanHang qlbh;
-    
+    Ghi_chu gc;
     
     public TrangChu() {
         initComponents();
         setLocationRelativeTo(null);
         
-        
+        gc = new Ghi_chu();
+        JDesktop.add(gc);
+        gc.setVisible(true);
+        gc.setLocation((JDesktop.getWidth() - gc.getWidth()) / 2, (JDesktop.getHeight() - gc.getHeight()) / 2);
 
     }
 
@@ -37,11 +40,15 @@ public class TrangChu extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+        jMenuItem1 = new javax.swing.JMenuItem();
         JDesktop = new javax.swing.JDesktopPane();
         jMenuBar1 = new javax.swing.JMenuBar();
         QLMH = new javax.swing.JMenu();
         QLKH = new javax.swing.JMenu();
         QLBH = new javax.swing.JMenu();
+        GhiChu = new javax.swing.JMenu();
+
+        jMenuItem1.setText("jMenuItem1");
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("Quản Lý Bán Hàng");
@@ -54,7 +61,7 @@ public class TrangChu extends javax.swing.JFrame {
         );
         JDesktopLayout.setVerticalGroup(
             JDesktopLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 569, Short.MAX_VALUE)
+            .addGap(0, 561, Short.MAX_VALUE)
         );
 
         QLMH.setText("Quản lý mặt hàng");
@@ -86,6 +93,14 @@ public class TrangChu extends javax.swing.JFrame {
         });
         jMenuBar1.add(QLBH);
 
+        GhiChu.setText("Hướng dẫn sử dụng");
+        GhiChu.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                GhiChuMouseClicked(evt);
+            }
+        });
+        jMenuBar1.add(GhiChu);
+
         setJMenuBar(jMenuBar1);
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
@@ -98,7 +113,7 @@ public class TrangChu extends javax.swing.JFrame {
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
                 .addComponent(JDesktop, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(0, 0, Short.MAX_VALUE))
+                .addGap(0, 10, Short.MAX_VALUE))
         );
 
         pack();
@@ -154,6 +169,21 @@ public class TrangChu extends javax.swing.JFrame {
         }
     }//GEN-LAST:event_QLBHMouseClicked
 
+    private void GhiChuMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_GhiChuMouseClicked
+        for (JInternalFrame jif : JDesktop.getAllFrames()) {
+            jif.dispose();
+        }
+        if (gc == null || gc.isClosed()) {
+            gc = new Ghi_chu();
+            JDesktop.add(gc);
+            gc.setVisible(true);
+            gc.setLocation((JDesktop.getWidth() -gc.getWidth())/2,
+                (JDesktop.getHeight() -gc.getHeight())/2);
+        } else {
+            gc.setVisible(true);
+        }
+    }//GEN-LAST:event_GhiChuMouseClicked
+
     /**
      * @param args the command line arguments
      */
@@ -190,10 +220,12 @@ public class TrangChu extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JMenu GhiChu;
     private javax.swing.JDesktopPane JDesktop;
     private javax.swing.JMenu QLBH;
     private javax.swing.JMenu QLKH;
     private javax.swing.JMenu QLMH;
     private javax.swing.JMenuBar jMenuBar1;
+    private javax.swing.JMenuItem jMenuItem1;
     // End of variables declaration//GEN-END:variables
 }

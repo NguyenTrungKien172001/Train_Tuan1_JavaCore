@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<Form version="1.3" maxVersion="1.9" type="org.netbeans.modules.form.forminfo.JInternalFrameFormInfo">
+  <Properties>
+    <Property name="closable" type="boolean" value="true"/>
+    <Property name="title" type="java.lang.String" value="Note"/>
+  </Properties>
+  <SyntheticProperties>
+    <SyntheticProperty name="formSizePolicy" type="int" value="1"/>
+  </SyntheticProperties>
+  <AuxValues>
+    <AuxValue name="FormSettings_autoResourcing" type="java.lang.Integer" value="0"/>
+    <AuxValue name="FormSettings_autoSetComponentName" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_generateFQN" type="java.lang.Boolean" value="true"/>
+    <AuxValue name="FormSettings_generateMnemonicsCode" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_i18nAutoMode" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_layoutCodeTarget" type="java.lang.Integer" value="1"/>
+    <AuxValue name="FormSettings_listenerGenerationStyle" type="java.lang.Integer" value="0"/>
+    <AuxValue name="FormSettings_variablesLocal" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_variablesModifier" type="java.lang.Integer" value="2"/>
+  </AuxValues>
+
+  <Layout>
+    <DimensionLayout dim="0">
+      <Group type="103" groupAlignment="0" attributes="0">
+          <Group type="102" alignment="0" attributes="0">
+              <EmptySpace max="-2" attributes="0"/>
+              <Component id="jScrollPane1" min="-2" pref="497" max="-2" attributes="0"/>
+              <EmptySpace pref="18" max="32767" attributes="0"/>
+          </Group>
+      </Group>
+    </DimensionLayout>
+    <DimensionLayout dim="1">
+      <Group type="103" groupAlignment="0" attributes="0">
+          <Group type="102" alignment="0" attributes="0">
+              <EmptySpace max="-2" attributes="0"/>
+              <Component id="jScrollPane1" pref="353" max="32767" attributes="0"/>
+              <EmptySpace max="-2" attributes="0"/>
+          </Group>
+      </Group>
+    </DimensionLayout>
+  </Layout>
+  <SubComponents>
+    <Container class="javax.swing.JScrollPane" name="jScrollPane1">
+      <AuxValues>
+        <AuxValue name="autoScrollPane" type="java.lang.Boolean" value="true"/>
+      </AuxValues>
+
+      <Layout class="org.netbeans.modules.form.compat2.layouts.support.JScrollPaneSupportLayout"/>
+      <SubComponents>
+        <Component class="javax.swing.JTextArea" name="jTextArea1">
+          <Properties>
+            <Property name="columns" type="int" value="20"/>
+            <Property name="rows" type="int" value="5"/>
+            <Property name="text" type="java.lang.String" value="Click menu Item&#xa;&#xa;C&#xe2;u 1: menu item &quot;qu&#x1ea3;n l&#xfd; m&#x1eb7;t h&#xe0;ng&quot;&#xa;&#xa;C&#xe2;u 2: menu item &quot;qu&#x1ea3;n l&#xfd; kh&#xe1;ch h&#xe0;ng&quot;&#xa;&#xa;C&#xe2;u 3: menu item &quot;qu&#x1ea3;n l&#xfd; b&#xe1;n h&#xe0;ng&quot; &#xa;     - tab1 &quot;B&#xe1;n h&#xe0;ng&quot; - x&#x1eed; l&#xfd; b&#xe1;n h&#xe0;ng cho kh&#xe1;ch h&#xe0;ng,&#xa;danh s&#xe1;ch QLBH.DAT &#x111;&#x1b0;&#x1ee3;c in tr&#xea;n tab &quot;B&#x1ea3;ng danh s&#xe1;ch mua h&#xe0;ng&quot; &#xa;&#xa;&#xa;C&#xe2;u 4: menu item &quot;qu&#x1ea3;n l&#xfd; b&#xe1;n h&#xe0;ng&quot;&#xa;     - tab2 &quot;B&#x1ea3;ng danh s&#xe1;ch mua h&#xe0;ng&quot; - s&#x1eaf;p x&#x1ebf;p danh &#xa;sa&#x301;ch Ba&#x309;ng danh sa&#x301;ch mua ha&#x300;ng &#x111;a&#x303; lu&#x31b;u trong QLBH.DAT &#xa;     - button s&#x1eaf;p x&#x1ebf;p theo t&#xea;n KH, t&#xea;n MH v&#xe0; m&#xe3; H&#x110;&#xa;&#xa;C&#xe2;u 5: m&#x1ed7;i l&#x1ea7;n mua h&#xe0;ng h&#xf3;a &#x111;&#x1a1;n s&#x1ebd; &#x111;&#x1b0;&#x1ee3;c in ra trong ph&#x1ea7;n &#xa;console"/>
+          </Properties>
+        </Component>
+      </SubComponents>
+    </Container>
+  </SubComponents>
+</Form>

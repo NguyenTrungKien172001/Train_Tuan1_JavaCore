@@ -102,6 +102,7 @@ public class QuanLyMatHang extends javax.swing.JInternalFrame {
         btnSua = new javax.swing.JButton();
         btnXoa = new javax.swing.JButton();
         btnClear = new javax.swing.JButton();
+        jLabel7 = new javax.swing.JLabel();
         tab2 = new javax.swing.JPanel();
         jScrollPane1 = new javax.swing.JScrollPane();
         tblQLMH = new javax.swing.JTable();
@@ -170,6 +171,8 @@ public class QuanLyMatHang extends javax.swing.JInternalFrame {
             }
         });
 
+        jLabel7.setText("* Bấm clear để được mở khóa chức năng thêm");
+
         javax.swing.GroupLayout tab1Layout = new javax.swing.GroupLayout(tab1);
         tab1.setLayout(tab1Layout);
         tab1Layout.setHorizontalGroup(
@@ -177,6 +180,9 @@ public class QuanLyMatHang extends javax.swing.JInternalFrame {
             .addGroup(tab1Layout.createSequentialGroup()
                 .addGap(31, 31, 31)
                 .addGroup(tab1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(tab1Layout.createSequentialGroup()
+                        .addComponent(jLabel7)
+                        .addGap(0, 0, Short.MAX_VALUE))
                     .addGroup(tab1Layout.createSequentialGroup()
                         .addComponent(btnThem)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
@@ -192,7 +198,7 @@ public class QuanLyMatHang extends javax.swing.JInternalFrame {
                             .addComponent(txtMahang)
                             .addComponent(jLabel3)
                             .addComponent(combobox, 0, 142, Short.MAX_VALUE))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 166, Short.MAX_VALUE)
                         .addGroup(tab1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addComponent(jLabel2)
                             .addComponent(txtTenhang, javax.swing.GroupLayout.PREFERRED_SIZE, 142, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -232,7 +238,9 @@ public class QuanLyMatHang extends javax.swing.JInternalFrame {
                     .addComponent(btnSua)
                     .addComponent(btnXoa)
                     .addComponent(btnClear))
-                .addContainerGap(141, Short.MAX_VALUE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 95, Short.MAX_VALUE)
+                .addComponent(jLabel7)
+                .addGap(51, 51, 51))
         );
 
         tab1Layout.linkSize(javax.swing.SwingConstants.VERTICAL, new java.awt.Component[] {btnClear, btnSua, btnThem, btnXoa});
@@ -503,6 +511,7 @@ public class QuanLyMatHang extends javax.swing.JInternalFrame {
     private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel5;
     private javax.swing.JLabel jLabel6;
+    private javax.swing.JLabel jLabel7;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JTabbedPane jTabbedPane1;
     private javax.swing.JPanel tab1;

@@ -93,6 +93,7 @@ public class QuanLyKhachHang extends javax.swing.JInternalFrame {
         btnClear = new javax.swing.JButton();
         jScrollPane1 = new javax.swing.JScrollPane();
         txtDiachi = new javax.swing.JTextArea();
+        jLabel7 = new javax.swing.JLabel();
         jPanel2 = new javax.swing.JPanel();
         jScrollPane2 = new javax.swing.JScrollPane();
         tblQLKH = new javax.swing.JTable();
@@ -160,6 +161,8 @@ public class QuanLyKhachHang extends javax.swing.JInternalFrame {
         txtDiachi.setRows(5);
         jScrollPane1.setViewportView(txtDiachi);
 
+        jLabel7.setText("* Bấm clear để được mở khóa chức năng thêm");
+
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
         jPanel1Layout.setHorizontalGroup(
@@ -167,6 +170,9 @@ public class QuanLyKhachHang extends javax.swing.JInternalFrame {
             .addGroup(jPanel1Layout.createSequentialGroup()
                 .addGap(31, 31, 31)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jPanel1Layout.createSequentialGroup()
+                        .addComponent(jLabel7)
+                        .addGap(0, 0, Short.MAX_VALUE))
                     .addGroup(jPanel1Layout.createSequentialGroup()
                         .addComponent(btnThem)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
@@ -220,7 +226,9 @@ public class QuanLyKhachHang extends javax.swing.JInternalFrame {
                             .addComponent(btnSua)
                             .addComponent(btnXoa)
                             .addComponent(btnClear))
-                        .addGap(131, 131, 131))))
+                        .addGap(83, 83, 83)
+                        .addComponent(jLabel7)
+                        .addGap(35, 35, 35))))
         );
 
         jTabbedPane1.addTab("Cập nhật", jPanel1);
@@ -519,6 +527,7 @@ public class QuanLyKhachHang extends javax.swing.JInternalFrame {
     private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel5;
     private javax.swing.JLabel jLabel6;
+    private javax.swing.JLabel jLabel7;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel2;
     private javax.swing.JScrollPane jScrollPane1;
